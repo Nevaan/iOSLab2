@@ -12,6 +12,7 @@
 		E558C01C1DCE0793001DBBAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E558C01A1DCE0793001DBBAA /* Main.storyboard */; };
 		E558C01E1DCE0793001DBBAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E558C01D1DCE0793001DBBAA /* Assets.xcassets */; };
 		E558C0211DCE0793001DBBAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E558C01F1DCE0793001DBBAA /* LaunchScreen.storyboard */; };
+		E558C0291DCE0936001DBBAA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E558C0281DCE0936001DBBAA /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E558C01D1DCE0793001DBBAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E558C0201DCE0793001DBBAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E558C0221DCE0793001DBBAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E558C0281DCE0936001DBBAA /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				E558C0161DCE0793001DBBAA /* AppDelegate.swift */,
 				E558C0181DCE0793001DBBAA /* ViewController.swift */,
 				E558C01A1DCE0793001DBBAA /* Main.storyboard */,
+				E558C0281DCE0936001DBBAA /* DetailViewController.swift */,
 				E558C01D1DCE0793001DBBAA /* Assets.xcassets */,
 				E558C01F1DCE0793001DBBAA /* LaunchScreen.storyboard */,
 				E558C0221DCE0793001DBBAA /* Info.plist */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E558C0291DCE0936001DBBAA /* DetailViewController.swift in Sources */,
 				E558C0191DCE0793001DBBAA /* ViewController.swift in Sources */,
 				E558C0171DCE0793001DBBAA /* AppDelegate.swift in Sources */,
 			);
