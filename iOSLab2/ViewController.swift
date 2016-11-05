@@ -35,9 +35,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if(segue.identifier == "detailsSegue") {
+        if(segue.identifier == "albumDetailSegue") {
             var state: String
-            state="LEL"
+            state = String(tableView.indexPathForSelectedRow?.row)
             
             (segue.destinationViewController as! DetailViewController).data = state
             
@@ -75,6 +75,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         return cell
     }
+    
+    
     
 }
 
