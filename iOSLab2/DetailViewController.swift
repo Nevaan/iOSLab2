@@ -11,16 +11,14 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    
-    @IBOutlet weak var switchStatus: UILabel!
-    
+
     var data: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if let label = data {
-            switchStatus.text = data
+           
         }
         
         // Do any additional setup after loading the view, typically from a nib.
