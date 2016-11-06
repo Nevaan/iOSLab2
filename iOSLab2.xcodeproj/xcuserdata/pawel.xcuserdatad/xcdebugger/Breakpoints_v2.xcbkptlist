@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSLab2/ViewController.swift"
-            timestampString = "500143852.063246"
+            timestampString = "500146472.040769"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "prepareForSegue(_:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -89,11 +89,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSLab2/DetailViewController.swift"
-            timestampString = "500143460.127983"
+            timestampString = "500146238.521319"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "cancelAction(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -105,11 +105,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSLab2/DetailViewController.swift"
-            timestampString = "500143956.959785"
+            timestampString = "500146238.521319"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
             landmarkName = "fillFieldsWithData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -121,44 +121,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSLab2/DetailViewController.swift"
-            timestampString = "500143683.608809"
+            timestampString = "500146238.521319"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "cancelAction(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iOSLab2/DetailViewController.swift"
-            timestampString = "500143956.959785"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "deleteAction(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "iOSLab2/DetailViewController.swift"
-            timestampString = "500143956.959785"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "deleteAction(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

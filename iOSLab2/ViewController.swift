@@ -25,6 +25,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.tableView.dataSource = self
         
+        
+        /* Observing application state to save/load data */
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.saveDataToFile), name: UIApplicationWillResignActiveNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.loadDataFromFile), name: UIApplicationDidBecomeActiveNotification, object: nil)
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -52,21 +57,21 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         albums = NSMutableArray(contentsOfFile: albumsDocPath)!
     }
+    
+    func saveDataToFile(){
+        albums.writeToFile(albumsDocPath, atomically: true)
+    }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return albums.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell:AlbumCell = self.tableView.dequeueReusableCellWithIdentifier("AlbumTableCellView") as! AlbumCell
+        let cell:AlbumCell = self.tableView.dequeueReusableCellWithIdentifier("AlbumTableCellView") as! AlbumCell
         
+        cell.authorLabel.text = self.albums[indexPath.row]["artist"] as? String
         
-        
-        //	cell.textLabel!.text = self.albums[indexPath.row]["artist"] as! String
-        
-        cell.authorLabel.text = self.albums[indexPath.row]["artist"] as! String
-        
-        cell.titleLabel.text = self.albums[indexPath.row]["title"] as! String
+        cell.titleLabel.text = self.albums[indexPath.row]["title"] as? String
         
         cell.titleLabel.adjustsFontSizeToFitWidth = false
         cell.titleLabel.lineBreakMode = NSLineBreakMode.ByTruncatingTail
