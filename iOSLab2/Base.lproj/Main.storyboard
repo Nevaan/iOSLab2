@@ -72,7 +72,7 @@
                             <constraint firstItem="seo-Hv-XSO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="EpG-2r-pJo"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="seo-Hv-XSO" secondAttribute="bottom" id="SjW-qd-n3e"/>
                             <constraint firstAttribute="trailingMargin" secondItem="seo-Hv-XSO" secondAttribute="trailing" constant="-16" id="Tj9-bp-J54"/>
-                            <constraint firstItem="seo-Hv-XSO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fkp-gv-QB4"/>
+                            <constraint firstItem="seo-Hv-XSO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="c0q-lU-wTp"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Album Viewer" id="zii-2Z-8m2"/>
@@ -106,10 +106,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3O5-3K-J5n">
                                         <rect key="frame" x="114.5" y="0.0" width="114" height="30"/>
                                         <state key="normal" title="Delete"/>
+                                        <connections>
+                                            <action selector="deleteAction:" destination="yQD-rf-zrw" eventType="touchUpInside" id="Lx4-Kh-H2b"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gpw-AC-xhP">
                                         <rect key="frame" x="228.5" y="0.0" width="114.5" height="30"/>
                                         <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancelAction:" destination="yQD-rf-zrw" eventType="touchUpInside" id="t4d-yi-pQI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -137,12 +143,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gyq-Kx-VWM">
-                                <rect key="frame" x="114" y="75" width="245" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eJe-QC-SDL">
                                 <rect key="frame" x="114" y="151" width="245" height="30"/>
                                 <nil key="textColor"/>
@@ -176,18 +176,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gyq-Kx-VWM">
+                                <rect key="frame" x="114" y="75" width="245" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Pgg-XU-0hJ" firstAttribute="leading" secondItem="Eoe-wS-now" secondAttribute="trailing" constant="64" id="52K-qH-dFt"/>
-                            <constraint firstItem="CYc-uw-cZ7" firstAttribute="leading" secondItem="rBB-i1-7vD" secondAttribute="trailing" constant="64.5" id="64N-og-lSO"/>
+                            <constraint firstItem="CYc-uw-cZ7" firstAttribute="leading" secondItem="36b-ag-hKi" secondAttribute="leadingMargin" constant="98" id="4OY-rp-17b"/>
                             <constraint firstItem="79y-3X-ICX" firstAttribute="top" secondItem="rBB-i1-7vD" secondAttribute="bottom" constant="17" id="6jW-yP-GOz"/>
                             <constraint firstAttribute="leadingMargin" secondItem="F8l-u1-HOr" secondAttribute="leading" id="8MN-Bi-azB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xVI-aW-er4" secondAttribute="trailing" id="AcH-VW-KfY"/>
-                            <constraint firstItem="gyq-Kx-VWM" firstAttribute="leading" secondItem="F8l-u1-HOr" secondAttribute="trailing" constant="56.5" id="C8c-XJ-2Eh"/>
-                            <constraint firstItem="eJe-QC-SDL" firstAttribute="leading" secondItem="79y-3X-ICX" secondAttribute="trailing" constant="51.5" id="CDR-Kh-Sfd"/>
+                            <constraint firstItem="gyq-Kx-VWM" firstAttribute="leading" secondItem="36b-ag-hKi" secondAttribute="leadingMargin" constant="98" id="Kaq-pt-Wtc"/>
                             <constraint firstItem="CYc-uw-cZ7" firstAttribute="top" secondItem="gyq-Kx-VWM" secondAttribute="bottom" constant="8" id="MkJ-7o-fAe"/>
-                            <constraint firstItem="Ash-mi-4ch" firstAttribute="leading" secondItem="1tP-a2-2hB" secondAttribute="trailing" constant="59.5" id="OhI-Ut-RjZ"/>
+                            <constraint firstItem="eJe-QC-SDL" firstAttribute="leading" secondItem="36b-ag-hKi" secondAttribute="leadingMargin" constant="98" id="OOD-c3-AlQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="r0b-62-xGK" secondAttribute="trailing" id="PNg-ts-vBs"/>
                             <constraint firstAttribute="leadingMargin" secondItem="79y-3X-ICX" secondAttribute="leading" id="Qnp-eO-3GD"/>
                             <constraint firstItem="Pgg-XU-0hJ" firstAttribute="top" secondItem="eJe-QC-SDL" secondAttribute="bottom" constant="10" id="TaE-rD-2tr"/>
@@ -206,6 +210,8 @@
                             <constraint firstItem="Ash-mi-4ch" firstAttribute="top" secondItem="Pgg-XU-0hJ" secondAttribute="bottom" constant="17" id="skC-Ff-X4F"/>
                             <constraint firstItem="gyq-Kx-VWM" firstAttribute="top" secondItem="oLT-oa-zsI" secondAttribute="bottom" constant="11" id="tVe-47-3fX"/>
                             <constraint firstAttribute="leadingMargin" secondItem="rBB-i1-7vD" secondAttribute="leading" id="vGT-g0-VJm"/>
+                            <constraint firstItem="Ash-mi-4ch" firstAttribute="leading" secondItem="36b-ag-hKi" secondAttribute="leadingMargin" constant="108.5" id="vQz-IO-tPG"/>
+                            <constraint firstItem="Pgg-XU-0hJ" firstAttribute="leading" secondItem="36b-ag-hKi" secondAttribute="leadingMargin" constant="98" id="xXI-1q-Wqi"/>
                             <constraint firstItem="r0b-62-xGK" firstAttribute="leading" secondItem="36b-ag-hKi" secondAttribute="leadingMargin" id="zAF-AJ-kf2"/>
                             <constraint firstItem="F8l-u1-HOr" firstAttribute="top" secondItem="oLT-oa-zsI" secondAttribute="bottom" constant="11" id="zM5-4M-IyH"/>
                         </constraints>
@@ -220,6 +226,16 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="artistField" destination="gyq-Kx-VWM" id="K97-Vf-jIy"/>
+                        <outlet property="deleteButton" destination="3O5-3K-J5n" id="7Qn-yq-C9e"/>
+                        <outlet property="genreField" destination="eJe-QC-SDL" id="hTj-Ql-3ZM"/>
+                        <outlet property="ratingField" destination="Ash-mi-4ch" id="bE4-A1-uoa"/>
+                        <outlet property="ratingStepper" destination="xVI-aW-er4" id="87p-XM-wqS"/>
+                        <outlet property="saveButton" destination="bW3-Ht-xYn" id="Hyn-6L-gJb"/>
+                        <outlet property="titleField" destination="CYc-uw-cZ7" id="SeA-lP-gaR"/>
+                        <outlet property="yearField" destination="Pgg-XU-0hJ" id="LbB-8H-Uxd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0K2-YE-05V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

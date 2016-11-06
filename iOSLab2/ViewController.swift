@@ -21,7 +21,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         loadDataFromFile()
-        print(albums)
         
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.tableView.dataSource = self
@@ -36,10 +35,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "albumDetailSegue") {
-            var state: String
-            state = String(tableView.indexPathForSelectedRow?.row)
+            var index: Int
+            index = (tableView.indexPathForSelectedRow?.row)!
             
-            (segue.destinationViewController as! DetailViewController).data = state
+            (segue.destinationViewController as! DetailViewController).currentIndex = index
             
         }
     }
